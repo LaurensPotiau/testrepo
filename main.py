@@ -5,11 +5,14 @@ from file_handler import FileHandler
 
 from aws_logging.log import Log
 
+
+### I was here 
+
 def start_dpg_file_handler(prefix, category, active_flag):
     """ Starts the data transfer of the dpg files. """
 
     # Start log 
-    l = Log('application', 'dpg-file-handler')
+    l = Log('application22222', 'dpg-file-handler')
     ts = datetime.now()
     l.add_log('dpg-file-handler.start', 'DPG Handler - Script started for category: {}'.format(category), l.RUN_STATUS_OK, ts, ts)
 
